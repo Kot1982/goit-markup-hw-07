@@ -4,25 +4,31 @@
 	margin-left: -30px;
 	margin-top: -30px;
 }
-.examples__list > .examples__item {
-	flex-basis: calc((100% - 90px) / 3);
-	margin-left: 30px;
-	margin-top: 30px;
+.examples__list {
+	> .examples__item {
+		flex-basis: calc((100% - 90px) / 3);
+		margin-left: 30px;
+		margin-top: 30px;
+	}
 }
-.examples__link:hover,
-.examples__link:focus {
-	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-	display: block;
+.examples__link {
+	&:hover,
+	&:focus {
+		box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+		display: block;
+	}
 }
 .examples__thumb {
 	position: relative;
 	overflow: hidden;
+	&:hover::before {
+		opacity: 1;
+	}
 }
-.examples__thumb:hover::before {
-	opacity: 1;
-}
-.examples__item:hover .overlay__container {
-	transform: translateY(0);
+.examples__item {
+	&:hover .overlay__container {
+		transform: translateY(0);
+	}
 }
 .overlay__container {
 	position: absolute;

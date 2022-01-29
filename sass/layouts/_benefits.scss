@@ -7,18 +7,18 @@
 }
 .benefits__item {
 	width: 270px;
-}
-.benefits__item:not(:last-child) {
-	margin-right: 30px;
-}
-.benefits__item::before {
-	content: "";
-	height: 120px;
-	display: block;
-	background-color: #f5f4fa;
-	background-size: auto;
-	background-repeat: no-repeat;
-	background-position: center;
+	&:not(:last-child) {
+		margin-right: 30px;
+	}
+	&::before {
+		content: "";
+		height: 120px;
+		display: block;
+		background-color: #f5f4fa;
+		background-size: auto;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
 }
 .benefits__item--satellite::before {
 	background-image: url("../images/satellite.svg");

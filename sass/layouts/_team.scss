@@ -47,8 +47,10 @@
 	display: flex;
 	justify-content: center;
 }
-.person__item + .person__item {
-	margin-left: 10px;
+.person__item {
+	+ .person__item {
+		margin-left: 10px;
+	}
 }
 .person__link {
 	width: 44px;
@@ -61,6 +63,10 @@
 	transition-property: background-color;
 	transition-duration: var(--transition-duration);
 	transition-timing-function: var(--transition-timing-function);
+	&:hover,
+	&:focus {
+		background-color: #2196f3;
+	}
 }
 .person__icon {
 	fill: #afb1b8;
@@ -68,11 +74,9 @@
 	transition-duration: var(--transition-duration);
 	transition-timing-function: var(--transition-timing-function);
 }
-.person__link:hover,
-.person__link:focus {
-	background-color: #2196f3;
-}
-.person__link:hover .person__icon,
-.person__link:focus .person__icon {
-	fill: #ffffff;
+.person__link {
+	&:hover .person__icon,
+	&:focus .person__icon {
+		fill: #ffffff;
+	}
 }
