@@ -214,7 +214,7 @@ body {
 .hero__btn {
   color: var(--light-color-for-another);
   background-color: var(--accent-color);
-  font-family: inherit;
+  font-family: "Roboto", "sans-serif";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -508,7 +508,7 @@ body {
 
 .footer__map {
   color: var(--light-color-for-another);
-  font-family: inherit;
+  font-family: "Roboto", "sans-serif";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -526,7 +526,7 @@ body {
 .footer__mail,
 .footer__tel {
   color: rgba(255, 255, 255, 0.6);
-  font-family: inherit;
+  font-family: "Roboto", "sans-serif";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -656,7 +656,7 @@ body {
 .portfolio__btn {
   color: var(--title-color);
   background-color: var(--grey-background-color);
-  font-family: inherit;
+  font-family: "Roboto", "sans-serif";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
